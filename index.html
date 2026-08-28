@@ -17,9 +17,9 @@
   --heading: #171817;
   --muted: #686962;
   --line: #ded9cd;
-  --accent: #3f86cf;
-  --accent-dark: #2869aa;
-  --type: #df5848;
+  --accent: #c9495d;
+  --accent-dark: #a92f45;
+  --type: #c9495d;
   --max: 1200px;
 }
 
@@ -88,7 +88,7 @@ a:hover {
 
 .nav-link:hover,
 .nav-link.current {
-  color: #111;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -134,6 +134,8 @@ a:hover {
   margin-bottom: 40px;
   min-height: 2.6em;
 }
+
+
 
 
 .contact-info {
@@ -221,6 +223,7 @@ a:hover {
   box-shadow: 0 13px 32px rgba(35, 33, 29, .13);
 }
 
+
 /* News */
 .news-section {
   padding: 62px 0 66px;
@@ -239,17 +242,70 @@ a:hover {
 
 .news-list {
   list-style: none;
-  max-height: 350px;
+  position: relative;
+  max-height: 390px;
   overflow-y: auto;
-  padding-right: 10px;
+  padding: 4px 12px 4px 29px;
 }
-
+.news-list::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 10px;
+  bottom: 10px;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--accent), rgba(201,73,93,.12));
+}
 .news-list li {
-  margin-bottom: 20px;
-  border-left: 3px solid var(--accent);
-  border-radius: 4px;
+  position: relative;
+  margin-bottom: 17px;
+}
+.news-list li::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 19px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 4px var(--bg);
+}
+.news-card {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 16px;
+  align-items: baseline;
   background: var(--bg-card);
-  padding: 15px 20px;
+  border: 1px solid rgba(201,73,93,.10);
+  border-radius: 9px;
+  padding: 14px 17px;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.news-card:hover {
+  transform: translateX(3px);
+  border-color: rgba(201,73,93,.26);
+  box-shadow: 0 7px 18px rgba(83,55,48,.06);
+}
+.news-date {
+  color: var(--accent);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .01em;
+  white-space: nowrap;
+}
+.news-card p { margin: 0; }
+html[data-theme="dark"] .news-list::before {
+  background: linear-gradient(to bottom, var(--accent), rgba(239,113,132,.10));
+}
+html[data-theme="dark"] .news-card {
+  border-color: rgba(239,113,132,.12);
+}
+html[data-theme="dark"] .news-card:hover {
+  border-color: rgba(239,113,132,.30);
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
 }
 
 .news-list::-webkit-scrollbar { width: 8px; }
@@ -340,7 +396,7 @@ a:hover {
   padding: 17px 18px;
   background: var(--bg-card);
   border-radius: 7px;
-  border-left: 3px solid rgba(63, 134, 207, .72);
+  border-left: 3px solid rgba(201, 73, 93, .72);
 }
 
 .course strong {
@@ -389,7 +445,7 @@ footer {
   opacity: 0;
   pointer-events: none;
   transform: translateY(7px);
-  box-shadow: 0 7px 18px rgba(38, 82, 125, .20);
+  box-shadow: 0 7px 18px rgba(110, 38, 54, .18);
   transition: opacity .2s ease, transform .2s ease, background-color .2s ease;
 }
 
@@ -429,6 +485,7 @@ footer {
 
 @media (max-width: 650px) {
   body { font-size: 16px; }
+
   .nav-container,
   .hero-container,
   .content-container,
@@ -443,6 +500,9 @@ footer {
   .icon-circle svg { width: 32px; height: 32px; }
   .icon-button { min-width: 82px; font-size: 12px; }
   .profile-photo { width: 250px; height: 250px; }
+  .news-list { padding-left: 25px; }
+  .news-card { grid-template-columns: 1fr; gap: 3px; }
+  .news-date { white-space: normal; }
   .course-grid { grid-template-columns: 1fr; }
 }
 
@@ -492,7 +552,7 @@ footer {
   transition: background-color .22s ease, color .22s ease, transform .22s ease;
 }
 .theme-toggle:hover {
-  background: rgba(63, 134, 207, .10);
+  background: rgba(201, 73, 93, .10);
   transform: translateY(-1px);
 }
 .theme-toggle:focus-visible {
@@ -533,9 +593,9 @@ html[data-theme="dark"] {
   --heading: #f6f3ed;
   --muted: #aaa8a1;
   --line: #35393d;
-  --accent: #4fa4d6;
-  --accent-dark: #86c8eb;
-  --type: #ef6d60;
+  --accent: #ef7184;
+  --accent-dark: #ff9aaa;
+  --type: #ef7184;
 }
 html[data-theme="dark"] body {
   color: var(--text);
@@ -547,12 +607,12 @@ html[data-theme="dark"] .navbar {
 }
 html[data-theme="dark"] .nav-link { color: #bebbb4; }
 html[data-theme="dark"] .nav-link:hover,
-html[data-theme="dark"] .nav-link.current { color: #ffffff; }
+html[data-theme="dark"] .nav-link.current { color: var(--accent); }
 html[data-theme="dark"] .theme-toggle {
-  color: #4fa4d6;
+  color: var(--accent);
 }
 html[data-theme="dark"] .theme-toggle:hover {
-  background: rgba(79, 164, 214, .12);
+  background: rgba(239, 113, 132, .12);
 }
 html[data-theme="dark"] .hero-tagline { color: #e9e5df; }
 html[data-theme="dark"] .contact-info {
@@ -572,8 +632,8 @@ html[data-theme="dark"] .news-section { border-top-color: var(--line); }
 html[data-theme="dark"] .news-list::-webkit-scrollbar-track { background: #34383c; }
 html[data-theme="dark"] .entry h3 { color: #f0ede7; }
 html[data-theme="dark"] .badge {
-  background: #26394a;
-  color: #9ed0ef;
+  background: #442b31;
+  color: #f3a0ad;
 }
 html[data-theme="dark"] .minor-projects summary { color: #b7b4ad; }
 html[data-theme="dark"] .minor-projects-body { color: #aaa79f; }
@@ -660,11 +720,11 @@ html[data-theme="dark"] footer { color: #8f918d; }
     <div class="content-container">
       <h2>News</h2>
       <ul class="news-list">
-        <li><strong>(August, 2026)</strong> My talk, <em>Optimal Design of Staircase Trials</em>, was accepted for presentation at the 2026 IMS International Conference on Statistics and Data Science (ICSDS) in Split, Croatia.</li>
-        <li><strong>(July, 2026)</strong> Participated in the BDSA-26 Summer Workshop at Ashoka University.</li>
-        <li><strong>(March, 2026)</strong> Attended the CDSDM-26 Conference at IIT Hyderabad.</li>
-        <li><strong>(June, 2025)</strong> Our review, <a href="https://www.ssca.org.in/media/5_Special_Conference_Proceedings_2025_02072025_Satya_P._Singh_FINAL_Finally.pdf" target="_blank" rel="noopener"><em>Advances in Stepped Wedge Design: A Comprehensive Review</em></a>, appeared in the SSCA Special Conference Proceedings.</li>
-        <li><strong>(December, 2024)</strong> Attended the IISA Annual Conference at Cochin University of Science and Technology.</li>
+        <li><div class="news-card"><span class="news-date">August 2026</span><p>My talk, <em>Optimal Design of Staircase Trials</em>, was accepted for presentation at the 2026 IMS International Conference on Statistics and Data Science (ICSDS) in Split, Croatia.</p></div></li>
+        <li><div class="news-card"><span class="news-date">July 2026</span><p>Participated in the BDSA-26 Summer Workshop at Ashoka University.</p></div></li>
+        <li><div class="news-card"><span class="news-date">March 2026</span><p>Attended the CDSDM-26 Conference at IIT Hyderabad.</p></div></li>
+        <li><div class="news-card"><span class="news-date">June 2025</span><p>Our review, <a href="https://www.ssca.org.in/media/5_Special_Conference_Proceedings_2025_02072025_Satya_P._Singh_FINAL_Finally.pdf" target="_blank" rel="noopener"><em>Advances in Stepped Wedge Design: A Comprehensive Review</em></a>, appeared in the SSCA Special Conference Proceedings.</p></div></li>
+        <li><div class="news-card"><span class="news-date">December 2024</span><p>Attended the IISA Annual Conference at Cochin University of Science and Technology.</p></div></li>
       </ul>
     </div>
   </section>
