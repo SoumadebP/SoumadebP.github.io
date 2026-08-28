@@ -491,7 +491,128 @@ footer {
   .type-cycle { display: block; min-width: 0; width: 100%; margin-top: .15em; }
 }
 
+
+
+/* Theme switcher */
+.theme-toggle {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--type);
+  cursor: pointer;
+  transition: background-color .22s ease, color .22s ease, transform .22s ease;
+}
+.theme-toggle:hover {
+  background: rgba(63, 134, 207, .10);
+  transform: translateY(-1px);
+}
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.theme-toggle svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.theme-toggle .moon-icon { display: none; }
+html[data-theme="dark"] .theme-toggle .sun-icon { display: none; }
+html[data-theme="dark"] .theme-toggle .moon-icon { display: block; }
+
+/* Smooth but restrained theme transition. */
+body,
+.navbar,
+.news-section,
+.contact-info,
+.news-list li,
+.course,
+footer,
+.icon-circle,
+.badge {
+  transition: background-color .28s ease, color .28s ease, border-color .28s ease, box-shadow .28s ease;
+}
+
+html[data-theme="dark"] {
+  --bg: #191b1d;
+  --bg-soft: #202326;
+  --bg-card: #232629;
+  --text: #e7e4de;
+  --heading: #f6f3ed;
+  --muted: #aaa8a1;
+  --line: #35393d;
+  --accent: #4fa4d6;
+  --accent-dark: #86c8eb;
+  --type: #ef6d60;
+}
+html[data-theme="dark"] body {
+  color: var(--text);
+  background: var(--bg);
+}
+html[data-theme="dark"] .navbar {
+  background: rgba(25, 27, 29, .96);
+  border-bottom-color: var(--line);
+}
+html[data-theme="dark"] .nav-link { color: #bebbb4; }
+html[data-theme="dark"] .nav-link:hover,
+html[data-theme="dark"] .nav-link.current { color: #ffffff; }
+html[data-theme="dark"] .theme-toggle {
+  color: #4fa4d6;
+}
+html[data-theme="dark"] .theme-toggle:hover {
+  background: rgba(79, 164, 214, .12);
+}
+html[data-theme="dark"] .hero-tagline { color: #e9e5df; }
+html[data-theme="dark"] .contact-info {
+  background: rgba(35, 38, 41, .92);
+  box-shadow: inset 0 0 0 1px rgba(77, 82, 87, .45);
+}
+html[data-theme="dark"] .icon-button { color: #dedbd5; }
+html[data-theme="dark"] .icon-button:hover { color: #ffffff; }
+html[data-theme="dark"] .icon-circle {
+  background: #2b2e31;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, .20), inset 0 0 0 1px rgba(255,255,255,.08);
+}
+html[data-theme="dark"] .icon-button:hover .icon-circle { background: #363a3e; }
+html[data-theme="dark"] .hero-description p,
+html[data-theme="dark"] .page-intro { color: #c9c6bf; }
+html[data-theme="dark"] .news-section { border-top-color: var(--line); }
+html[data-theme="dark"] .news-list::-webkit-scrollbar-track { background: #34383c; }
+html[data-theme="dark"] .entry h3 { color: #f0ede7; }
+html[data-theme="dark"] .badge {
+  background: #26394a;
+  color: #9ed0ef;
+}
+html[data-theme="dark"] .minor-projects summary { color: #b7b4ad; }
+html[data-theme="dark"] .minor-projects-body { color: #aaa79f; }
+html[data-theme="dark"] footer { color: #8f918d; }
+
+@media (max-width: 650px) {
+  .theme-toggle { width: 32px; height: 32px; }
+  .theme-toggle svg { width: 19px; height: 19px; }
+}
+
 </style>
+
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('soumadeb-theme');
+        document.documentElement.setAttribute('data-theme', savedTheme === 'dark' ? 'dark' : 'light');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    }());
+  </script>
 </head>
 <body>
   <nav class="navbar"><div class="nav-container"><div class="nav-links">
@@ -499,6 +620,15 @@ footer {
     <a class="nav-link" href="index.html#news">News</a>
     <a class="nav-link" href="research.html">Research</a>
     <a class="nav-link current" href="teaching.html">Teaching</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Change theme" title="Change theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="3.8"></circle>
+            <path d="M12 2v2.2M12 19.8V22M4.93 4.93l1.56 1.56M17.51 17.51l1.56 1.56M2 12h2.2M19.8 12H22M4.93 19.07l1.56-1.56M17.51 6.49l1.56-1.56"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"></path>
+          </svg>
+        </button>
   </div></div></nav>
 
   <main class="page-main">
@@ -530,6 +660,23 @@ footer {
       window.addEventListener('scroll', () => topButton.classList.toggle('show', window.scrollY > 300));
       topButton.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     }
-  </script>
+  
+    const themeToggle = document.getElementById('theme-toggle');
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      if (themeToggle) {
+        themeToggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      }
+      try { localStorage.setItem('soumadeb-theme', theme); } catch (e) {}
+    }
+    if (themeToggle) {
+      const currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      themeToggle.setAttribute('aria-pressed', currentTheme === 'dark' ? 'true' : 'false');
+      themeToggle.addEventListener('click', () => {
+        const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        setTheme(nextTheme);
+      });
+    }
+</script>
 </body>
 </html>
