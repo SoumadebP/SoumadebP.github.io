@@ -8,9 +8,9 @@ window.GALLERY_DATA = [
   {
     folder: "Nepal-Mustang",
     photos: [
-      { file: "IMG_20260306_234517.jpg", caption: "On the road through Mustang, Nepal" },
-      { file: "IMG_20260306_234743.jpg", caption: "Mountain landscape, Mustang, Nepal" },
-      { file: "IMG_20260306_235124.jpg", caption: "A lone hiker in Mustang, Nepal" },
+      { file: "IMG_20260306_234517.jpg", caption: "On the road through Mustang" },
+      { file: "IMG_20260306_234743.jpg", caption: "Mountain landscape, Mustang" },
+      { file: "IMG_20260306_235124.jpg", caption: "Me going towards Lubra Viewpoint" },
       { file: "IMG_20260307_001746.jpg", caption: "Ruins against the Himalayan landscape, Mustang, Nepal" },
       { file: "IMG_20260307_131157.jpg", caption: "Himalayan peaks, Mustang, Nepal" },
       { file: "IMG_20260307_132520.jpg", caption: "Village landscape, Mustang, Nepal" },
