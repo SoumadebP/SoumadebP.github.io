@@ -30,5 +30,21 @@ window.GALLERY_DATA = [
       { file: "07-sunrise-from-sarangkot.jpg", caption: "Sunrise from Sarangkot" },
       { file: "08-unknown-village.jpg", caption: "Unknown village" },
     ]
-  }
+  },
+  {
+    folder: "Wildlife",
+    photos: [
+      { file: "A full-grown male! Pilibhit.jpg", caption: "A full-grown male! Pilibhit" },
+      { file: "A Giant Tusker, Corbett.jpg", caption: "A Giant Tusker, Corbett" },
+      { file: "Indian Pitta, Panna.jpg", caption: "Indian Pitta, Panna" },
+      { file: "Mee.jpg", caption: "First time came to know white is not the right colour to wear in jungle!" },
+      { file: "Shaheen Falcon, Panna.jpg", caption: "Shaheen Falcon, Panna" },
+      { file: "Summer time relief! Panna.jpg", caption: "Summer time relief! Panna" },
+      { file: "The King's Own Road! Pilibhit.jpg", caption: "The King's own road! Pilibhit" },
+      { file: "The Royal King! Corbett.jpg", caption: "The Royal King! Corbett" },
+      { file: "The cold stare!, Corbett.jpg", caption: "The cold stare! Corbett" },
+      { file: "The spectacular grassland of Dhikala, Corbett.jpg", caption: "The spectacular grassland of Dhikala, Corbett" },
+      { file: "Wild Majesty by the Water, Panna.jpg", caption: "Wild Majesty by the water, Panna" },
+    ]
+  },
 ];
