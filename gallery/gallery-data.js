@@ -35,9 +35,10 @@ window.GALLERY_DATA = [
     folder: "Wildlife",
     photos: [
       { file: "A full-grown male! Pilibhit.jpg", caption: "A full-grown male! Pilibhit" },
-      { file: "A Giant Tusker, Corbett.jpg", caption: "A Giant Tusker, Corbett" },
+      { file: "A giant Tusker, Corbett.jpg", caption: "A giant Tusker, Corbett" },
       { file: "Indian Pitta, Panna.jpg", caption: "Indian Pitta, Panna" },
       { file: "Mee.jpg", caption: "First time came to know white is not the right colour to wear in jungle!" },
+      { file: "Paradise Flycather, Corbett.jpg", caption: "Paradise Flycatcher, Corbett" },
       { file: "Shaheen Falcon, Panna.jpg", caption: "Shaheen Falcon, Panna" },
       { file: "Summer time relief! Panna.jpg", caption: "Summer time relief! Panna" },
       { file: "The King's Own Road! Pilibhit.jpg", caption: "The King's own road! Pilibhit" },
