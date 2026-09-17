@@ -8,10 +8,10 @@ window.GALLERY_DATA = [
     folder: "Himachal",
     photos: [
       { file: "Bhimkali Temple, Sarahan.jpg", caption: "Bhimkali Temple, Sarahan" },
-      { file: "The great Kailash peak, Kalpa.jpg", caption: "The great Kailash peak, Kalpa" },
+      { file: "The great Kailash peak.JPG", caption: "The great Kailash peak, Kalpa" },
       { file: "Grahan Village.jpg", caption: "Drone view of Grahan Village" },
-      { file: "Starry Starry night! Grahan.jpg", caption: "Starry Starry night! Grahan" },
-      { file: "Heil Himachal!.jpg", caption: "Heil Himachal!" },
+      { file: "Starry starry night! Grahan.jpg", caption: "Starry Starry Night! Grahan" },
+      { file: "Heil himachal!.jpg", caption: "Heil Himachal!" },
       { file: "Khoksar.jpg", caption: "Khoksar" },
       { file: "Pulgi.jpg", caption: "Pulgi" },
       { file: "Sissu Waterfall.jpg", caption: "Sissu Waterfall" },
