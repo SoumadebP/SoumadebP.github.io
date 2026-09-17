@@ -4,6 +4,20 @@
 // 2) copy one gallery block below, set folder to the exact folder name,
 //    and list the image filenames. Captions are optional.
 window.GALLERY_DATA = [
+   {
+    folder: "Himachal",
+    photos: [
+      { file: "Bhimkali Temple, Sarahan.jpg", caption: "Bhimkali Temple, Sarahan" },
+      { file: "The great Kailash peak, Kalpa.jpg", caption: "The great Kailash peak, Kalpa" },
+      { file: "Grahan Village.jpg", caption: "Drone view of Grahan Village" },
+      { file: "Starry Starry night! Grahan.jpg", caption: "Starry Starry night! Grahan" },
+      { file: "Heil Himachal!.jpg", caption: "Heil Himachal!" },
+      { file: "Khoksar.jpg", caption: "Khoksar" },
+      { file: "Pulgi.jpg", caption: "Pulgi" },
+      { file: "Sissu Waterfall.jpg", caption: "Sissu Waterfall" },
+      { file: "beas River, Manali.jpg", caption: "Beas River, Manali" },
+    ]
+  },
   {
     folder: "Nepal-Mustang",
     photos: [
