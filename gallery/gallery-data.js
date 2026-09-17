@@ -41,7 +41,7 @@ window.GALLERY_DATA = [
       { file: "Paradise Flycather, Corbett.jpg", caption: "Paradise Flycatcher, Corbett" },
       { file: "Shaheen Falcon, Panna.jpg", caption: "Shaheen Falcon, Panna" },
       { file: "Summer time relief! Panna.jpg", caption: "Summer time relief! Panna" },
-      { file: "The King's Own Road! Pilibhit.jpg", caption: "The King's own road! Pilibhit" },
+      { file: "The King’s Own Road! Pilibhit.jpg", caption: "The King's own road! Pilibhit" },
       { file: "The Royal King! Corbett.jpg", caption: "The Royal King! Corbett" },
       { file: "The cold stare!, Corbett.jpg", caption: "The cold stare! Corbett" },
       { file: "The spectacular grassland of Dhikala, Corbett.jpg", caption: "The spectacular grassland of Dhikala, Corbett" },
