@@ -17,11 +17,13 @@
     .page-main{min-height:80vh;padding:66px 0 88px}.page-title{color:var(--heading);font-size:2.55rem;line-height:1.1;margin-bottom:12px}.page-intro{max-width:760px;color:var(--muted);font-size:1.05rem;line-height:1.75;margin-bottom:48px}
     .gallery-section{margin-top:50px}.place-header{display:flex;align-items:baseline;gap:13px;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--line)}.place-title{color:var(--heading);font-size:1.75rem;line-height:1.2}.photo-count{font-family:Inter,Arial,sans-serif;color:var(--muted);font-size:.78rem;font-weight:600}
     .photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.photo-card{position:relative;border:0;background:none;cursor:zoom-in;overflow:hidden;border-radius:10px;aspect-ratio:4/3;box-shadow:0 7px 20px rgba(55,43,35,.08)}.photo-card img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s ease,filter .35s ease}.photo-card:hover img{transform:scale(1.025);filter:brightness(.93)}.photo-card::after{content:"View";position:absolute;right:10px;bottom:9px;padding:4px 8px;border-radius:999px;background:rgba(20,20,20,.64);color:#fff;font-family:Inter,Arial,sans-serif;font-size:.68rem;font-weight:600;opacity:0;transform:translateY(4px);transition:.22s ease}.photo-card:hover::after{opacity:1;transform:none}
-    .lightbox{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;background:rgba(8,9,10,.94);padding:28px}.lightbox.open{display:flex}.lightbox-inner{position:relative;z-index:101;width:min(96vw,1500px);height:min(92vh,1000px);display:flex;align-items:center;justify-content:center;flex-direction:column}.lightbox-image-wrap{min-height:0;flex:1;width:100%;display:flex;align-items:center;justify-content:center}.lightbox img{max-width:100%;max-height:calc(92vh - 86px);object-fit:contain;box-shadow:0 18px 50px rgba(0,0,0,.38)}.lightbox-caption{min-height:52px;color:#f2eee8;font-family:Inter,Arial,sans-serif;font-size:.9rem;text-align:center;padding:13px 56px 0}.lightbox-close,.lightbox-prev,.lightbox-next{position:fixed;z-index:130;pointer-events:auto;border:0;background:rgba(255,255,255,.10);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s ease}.lightbox-close{top:22px;right:24px;width:44px;height:44px;border-radius:50%;font-size:28px}.lightbox-prev,.lightbox-next{top:50%;transform:translateY(-50%);width:46px;height:64px;border-radius:8px;font-size:34px}.lightbox-prev{left:22px}.lightbox-next{right:22px}.lightbox-close:hover,.lightbox-prev:hover,.lightbox-next:hover{background:rgba(255,255,255,.19)}.lightbox-counter{position:fixed;z-index:130;top:28px;left:28px;color:#ccc;font:600 .78rem Inter,Arial,sans-serif;letter-spacing:.04em}
+    .lightbox{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;background:rgba(8,9,10,.94);padding:28px}.lightbox.open{display:flex}.lightbox-inner{position:relative;z-index:101;width:min(96vw,1500px);height:min(92vh,1000px);display:flex;align-items:center;justify-content:center;flex-direction:column}.lightbox-image-wrap{min-height:0;flex:1;width:100%;display:flex;align-items:center;justify-content:center}.lightbox img{max-width:100%;max-height:calc(92vh - 86px);object-fit:contain;box-shadow:0 18px 50px rgba(0,0,0,.38)}.lightbox-caption{min-height:52px;color:#f2eee8;font-family:Inter,Arial,sans-serif;font-size:.9rem;text-align:center;padding:13px 56px 0}.lightbox-close,.lightbox-prev,.lightbox-next{position:fixed;z-index:130;pointer-events:auto;border:0;background:rgba(255,255,255,.10);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s ease}.lightbox-close{top:22px;right:24px;width:44px;height:44px;border-radius:50%;font-size:28px}.lightbox-prev,.lightbox-next{top:50%;transform:translateY(-50%);width:46px;height:64px;border-radius:8px;font-size:34px}.lightbox-prev{left:22px}.lightbox-next{right:22px}.lightbox-close:hover,.lightbox-prev:hover,.lightbox-next:hover{background:rgba(255,255,255,.19)}.lightbox-counter{position:fixed;z-index:140;top:28px;left:28px;color:#ccc;font:600 .78rem Inter,Arial,sans-serif;letter-spacing:.04em}
+    .lightbox-toolbar{position:fixed;z-index:145;top:20px;left:50%;transform:translateX(-50%);display:flex;gap:8px;align-items:center}.lightbox-tool{width:44px;height:44px;border:0;border-radius:10px;background:rgba(255,255,255,.10);color:#fff;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:background .2s ease,transform .2s ease}.lightbox-tool:hover{background:rgba(255,255,255,.19);transform:translateY(-1px)}.lightbox-tool svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.lightbox-tool .pause-icon{display:none}.lightbox-tool.playing .play-icon{display:none}.lightbox-tool.playing .pause-icon{display:block}.lightbox-tool.active{background:rgba(239,113,132,.28);color:#ff9aaa}
+    .thumb-panel{position:fixed;z-index:135;top:0;right:0;bottom:0;width:min(340px,34vw);padding:78px 12px 18px;background:rgba(15,16,18,.98);border-left:1px solid rgba(255,255,255,.10);box-shadow:-16px 0 34px rgba(0,0,0,.26);transform:translateX(102%);transition:transform .25s ease;overflow-y:auto}.thumb-panel.open{transform:translateX(0)}.thumb-panel-title{position:absolute;top:24px;left:18px;color:#eee;font:600 .88rem Inter,Arial,sans-serif;letter-spacing:.02em}.thumb-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.thumb-item{border:2px solid transparent;border-radius:4px;background:none;padding:0;cursor:pointer;overflow:hidden;aspect-ratio:4/3}.thumb-item img{width:100%;height:100%;display:block;object-fit:cover}.thumb-item:hover{border-color:rgba(255,255,255,.42)}.thumb-item.current{border-color:#ef7184;box-shadow:0 0 0 1px rgba(239,113,132,.30)}
     footer{padding:38px 0;border-top:1px solid var(--line);color:#92928b;text-align:center;font-size:14px}
     html[data-theme="dark"]{--bg:#191b1d;--bg-card:#232629;--text:#e7e4de;--heading:#f6f3ed;--muted:#aaa8a1;--line:#35393d;--accent:#ef7184;--accent-dark:#ff9aaa}html[data-theme="dark"] body{background:var(--bg);color:var(--text)}html[data-theme="dark"] .navbar{background:rgba(25,27,29,.96);border-bottom-color:var(--line)}html[data-theme="dark"] .nav-link{color:#bebbb4}html[data-theme="dark"] .nav-link:hover,html[data-theme="dark"] .nav-link.current{color:var(--accent)}html[data-theme="dark"] .photo-card{box-shadow:0 8px 24px rgba(0,0,0,.20)}
     @media(max-width:900px){.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media(max-width:650px){body{font-size:16px}.nav-container,.page-container{padding:0 20px}.navbar{padding:16px 0}.nav-links{gap:18px;justify-content:flex-start}.page-main{padding:44px 0 64px}.page-title{font-size:2.25rem}.photo-grid{grid-template-columns:1fr;gap:12px}.lightbox{padding:16px}.lightbox-prev,.lightbox-next{width:40px;height:56px}.lightbox-prev{left:8px}.lightbox-next{right:8px}.lightbox-close{top:12px;right:12px}.lightbox-counter{top:18px;left:16px}.lightbox-caption{padding-left:48px;padding-right:48px}}
+    @media(max-width:650px){body{font-size:16px}.nav-container,.page-container{padding:0 20px}.navbar{padding:16px 0}.nav-links{gap:18px;justify-content:flex-start}.page-main{padding:44px 0 64px}.page-title{font-size:2.25rem}.photo-grid{grid-template-columns:1fr;gap:12px}.lightbox{padding:16px}.lightbox-prev,.lightbox-next{width:40px;height:56px}.lightbox-prev{left:8px}.lightbox-next{right:8px}.lightbox-close{top:12px;right:12px}.lightbox-counter{top:18px;left:16px}.lightbox-toolbar{top:10px;left:50%}.lightbox-tool{width:40px;height:40px}.thumb-panel{width:min(86vw,330px);padding-top:68px}.thumb-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lightbox-caption{padding-left:48px;padding-right:48px}}
   </style>
   <script>(function(){try{var t=localStorage.getItem('soumadeb-theme');document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light')}catch(e){document.documentElement.setAttribute('data-theme','light')}}())</script>
 </head>
@@ -30,19 +32,108 @@
   <a class="nav-link" href="index.html">About</a><a class="nav-link" href="index.html#news">News</a><a class="nav-link" href="research.html">Research</a><a class="nav-link" href="teaching.html">Teaching</a><a class="nav-link current" href="gallery.html">Gallery</a>
   <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Change theme" title="Change theme"><svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.8"></circle><path d="M12 2v2.2M12 19.8V22M4.93 4.93l1.56 1.56M17.51 17.51l1.56 1.56M2 12h2.2M19.8 12H22M4.93 19.07l1.56-1.56M17.51 6.49l1.56-1.56"></path></svg><svg class="moon-icon" viewBox="0 0 24 24"><path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.5 8.5 0 1 0 20.2 15.2Z"></path></svg></button>
 </div></div></nav>
-<main class="page-main"><div class="page-container"><h1 class="page-title">Gallery</h1><p class="page-intro">A small collection of places and moments. Click on any photo to slow down a bit.</p><div id="gallery-root"></div></div></main>
+<main class="page-main"><div class="page-container"><h1 class="page-title">Gallery</h1><p class="page-intro">A small collection of places and moments I have enjoyed photographing in recent years. Click any photograph to slow down, see it full-size, and wander through the collection.</p><div id="gallery-root"></div></div></main>
 <footer><div class="page-container">© 2026 Soumadeb Pain</div></footer>
-<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer"><div class="lightbox-counter" id="lightbox-counter"></div><button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close">×</button><button class="lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous photo">‹</button><div class="lightbox-inner"><div class="lightbox-image-wrap"><img id="lightbox-image" alt=""></div><div class="lightbox-caption" id="lightbox-caption"></div></div><button class="lightbox-next" id="lightbox-next" type="button" aria-label="Next photo">›</button></div>
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer">
+  <div class="lightbox-counter" id="lightbox-counter"></div>
+  <div class="lightbox-toolbar" aria-label="Gallery controls">
+    <button class="lightbox-tool" id="slideshow-toggle" type="button" aria-label="Start slideshow" title="Start slideshow">
+      <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l10 7-10 7Z"></path></svg>
+      <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v14M15 5v14"></path></svg>
+    </button>
+    <button class="lightbox-tool" id="thumbnails-toggle" type="button" aria-label="Show thumbnails" title="Show thumbnails">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"></rect><rect x="14" y="4" width="6" height="6" rx="1"></rect><rect x="4" y="14" width="6" height="6" rx="1"></rect><rect x="14" y="14" width="6" height="6" rx="1"></rect></svg>
+    </button>
+  </div>
+  <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close">×</button>
+  <button class="lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous photo">‹</button>
+  <div class="lightbox-inner"><div class="lightbox-image-wrap"><img id="lightbox-image" alt=""></div><div class="lightbox-caption" id="lightbox-caption"></div></div>
+  <button class="lightbox-next" id="lightbox-next" type="button" aria-label="Next photo">›</button>
+  <aside class="thumb-panel" id="thumb-panel" aria-hidden="true"><div class="thumb-panel-title">Thumbnails</div><div class="thumb-grid" id="thumb-grid"></div></aside>
+</div>
 <script src="gallery/gallery-data.js"></script>
 <script>
 const root=document.getElementById('gallery-root'); const all=[];
 function displayName(folder){return folder;} // folder name is intentionally used as the place heading
 (window.GALLERY_DATA||[]).forEach(group=>{const section=document.createElement('section');section.className='gallery-section';const head=document.createElement('div');head.className='place-header';head.innerHTML=`<h2 class="place-title">${displayName(group.folder)}</h2><span class="photo-count">${group.photos.length} photos</span>`;section.appendChild(head);const grid=document.createElement('div');grid.className='photo-grid';group.photos.forEach(p=>{const idx=all.length;const src=`gallery/${group.folder}/${p.file}`;all.push({src,caption:p.caption||'',alt:p.caption||displayName(group.folder)});const b=document.createElement('button');b.className='photo-card';b.type='button';b.setAttribute('aria-label',p.caption?`Open photo: ${p.caption}`:`Open photo from ${displayName(group.folder)}`);b.innerHTML=`<img src="${src}" alt="${p.caption||displayName(group.folder)}" loading="lazy">`;b.addEventListener('click',()=>openLightbox(idx));grid.appendChild(b)});section.appendChild(grid);root.appendChild(section)});
-const box=document.getElementById('lightbox'),img=document.getElementById('lightbox-image'),cap=document.getElementById('lightbox-caption'),count=document.getElementById('lightbox-counter');let current=0;
-function show(i){if(!all.length)return;current=(i+all.length)%all.length;const p=all[current];img.src=p.src;img.alt=p.alt;cap.textContent=p.caption;cap.style.display=p.caption?'block':'none';count.textContent=`${current+1} / ${all.length}`}
-function openLightbox(i){show(i);box.classList.add('open');box.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}
-function closeLightbox(){box.classList.remove('open');box.setAttribute('aria-hidden','true');document.body.style.overflow=''}
-const closeButton=document.getElementById('lightbox-close'),prevButton=document.getElementById('lightbox-prev'),nextButton=document.getElementById('lightbox-next');closeButton.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();closeLightbox()});prevButton.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();show(current-1)});nextButton.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();show(current+1)});box.addEventListener('click',e=>{if(e.target===box)closeLightbox()});document.addEventListener('keydown',e=>{if(!box.classList.contains('open'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowLeft')show(current-1);if(e.key==='ArrowRight')show(current+1)});
+const box=document.getElementById('lightbox'),img=document.getElementById('lightbox-image'),cap=document.getElementById('lightbox-caption'),count=document.getElementById('lightbox-counter');
+const thumbPanel=document.getElementById('thumb-panel'),thumbGrid=document.getElementById('thumb-grid'),thumbToggle=document.getElementById('thumbnails-toggle'),slideToggle=document.getElementById('slideshow-toggle');
+let current=0,slideTimer=null;
+
+function renderThumbnails(){
+  thumbGrid.innerHTML='';
+  all.forEach((p,i)=>{
+    const b=document.createElement('button');
+    b.type='button';b.className='thumb-item';b.setAttribute('aria-label',`View photo ${i+1}`);
+    b.innerHTML=`<img src="${p.src}" alt="" loading="lazy">`;
+    b.addEventListener('click',e=>{e.stopPropagation();show(i)});
+    thumbGrid.appendChild(b);
+  });
+}
+
+function syncActiveThumb(){
+  const items=thumbGrid.querySelectorAll('.thumb-item');
+  items.forEach((el,i)=>el.classList.toggle('current',i===current));
+  const active=items[current];
+  if(active&&thumbPanel.classList.contains('open')) active.scrollIntoView({block:'nearest',behavior:'smooth'});
+}
+
+function show(i){
+  if(!all.length)return;
+  current=(i+all.length)%all.length;
+  const p=all[current];
+  img.src=p.src;img.alt=p.alt;cap.textContent=p.caption;cap.style.display=p.caption?'block':'none';count.textContent=`${current+1} / ${all.length}`;
+  syncActiveThumb();
+}
+
+function startSlideshow(){
+  if(slideTimer)return;
+  slideToggle.classList.add('playing');
+  slideToggle.setAttribute('aria-label','Pause slideshow');
+  slideToggle.title='Pause slideshow';
+  slideTimer=setInterval(()=>show(current+1),4000);
+}
+
+function stopSlideshow(){
+  if(slideTimer){clearInterval(slideTimer);slideTimer=null;}
+  slideToggle.classList.remove('playing');
+  slideToggle.setAttribute('aria-label','Start slideshow');
+  slideToggle.title='Start slideshow';
+}
+
+function toggleThumbnails(force){
+  const willOpen=typeof force==='boolean'?force:!thumbPanel.classList.contains('open');
+  thumbPanel.classList.toggle('open',willOpen);
+  thumbPanel.setAttribute('aria-hidden',willOpen?'false':'true');
+  thumbToggle.classList.toggle('active',willOpen);
+  thumbToggle.setAttribute('aria-label',willOpen?'Hide thumbnails':'Show thumbnails');
+  thumbToggle.title=willOpen?'Hide thumbnails':'Show thumbnails';
+  if(willOpen) syncActiveThumb();
+}
+
+function openLightbox(i){
+  if(!thumbGrid.children.length)renderThumbnails();
+  show(i);box.classList.add('open');box.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+  stopSlideshow();toggleThumbnails(false);box.classList.remove('open');box.setAttribute('aria-hidden','true');document.body.style.overflow='';
+}
+
+const closeButton=document.getElementById('lightbox-close'),prevButton=document.getElementById('lightbox-prev'),nextButton=document.getElementById('lightbox-next');
+closeButton.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();closeLightbox()});
+prevButton.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();show(current-1)});
+nextButton.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();show(current+1)});
+slideToggle.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();slideTimer?stopSlideshow():startSlideshow()});
+thumbToggle.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();toggleThumbnails()});
+thumbPanel.addEventListener('click',e=>e.stopPropagation());
+box.addEventListener('click',e=>{if(e.target===box)closeLightbox()});
+document.addEventListener('keydown',e=>{
+  if(!box.classList.contains('open'))return;
+  if(e.key==='Escape')closeLightbox();
+  if(e.key==='ArrowLeft')show(current-1);
+  if(e.key==='ArrowRight')show(current+1);
+  if(e.key===' '){e.preventDefault();slideTimer?stopSlideshow():startSlideshow();}
+});
 const toggle=document.getElementById('theme-toggle');function setTheme(t){document.documentElement.setAttribute('data-theme',t);try{localStorage.setItem('soumadeb-theme',t)}catch(e){}}toggle.addEventListener('click',()=>setTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark'));
 </script>
 </body></html>
