@@ -21,15 +21,15 @@ window.GALLERY_DATA = [
   {
     folder: "Nepal-Mustang",
     photos: [
-      { file: "IMG_20260306_234517.jpg", caption: "On the road through Mustang" },
-      { file: "IMG_20260306_234743.jpg", caption: "Mountain landscape, Mustang" },
+      { file: "IMG_20260306_234517.jpg", caption: "On the way to Jomsom" },
+      { file: "IMG_20260306_234743.jpg", caption: "Lost in the silence of Lubra" },
       { file: "IMG_20260306_235124.jpg", caption: "Me going towards Lubra Viewpoint" },
-      { file: "IMG_20260307_001746.jpg", caption: "Ruins against the Himalayan landscape, Mustang, Nepal" },
-      { file: "IMG_20260307_131157.jpg", caption: "Himalayan peaks, Mustang, Nepal" },
-      { file: "IMG_20260307_132520.jpg", caption: "Village landscape, Mustang, Nepal" },
-      { file: "IMG_20260307_133008.jpg", caption: "Monastery in Mustang, Nepal" },
-      { file: "IMG_20260307_133502.jpg", caption: "Mustang valley and the Himalayas, Nepal" },
-      { file: "IMG_20260307_133640.jpg", caption: "Village and Himalayan panorama, Mustang, Nepal" },
+      { file: "IMG_20260307_001746.jpg", caption: "An ancient fort, Lubra" },
+      { file: "IMG_20260307_131157.jpg", caption: "Mt. Tukuche from Muktinath" },
+      { file: "IMG_20260307_132520.jpg", caption: "Kagbeni" },
+      { file: "IMG_20260307_133008.jpg", caption: "Monastery at Jharkot" },
+      { file: "IMG_20260307_133502.jpg", caption: "From Muktinath" },
+      { file: "IMG_20260307_133640.jpg", caption: "Ancient Jhong village" },
     ]
   },
   {
