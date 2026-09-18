@@ -41,9 +41,9 @@ window.GALLERY_DATA = [
       { file: "05-mt-dhaulagiri.jpg", caption: "Mt. Dhaulagiri" },
       { file: "02-laughing-with-annapurna-iv.jpg", caption: "Laughing with Annapurna IV" },
       { file: "06-sarangkot.jpg", caption: "Sarangkot" },
-      { file: "07-sunrise-from-sarangkot.jpg", caption: "Sunrise from Sarangkot" },
-      { file: "08-unknown-village.jpg", caption: "Unknown village" },
       { file: "1.jpg", caption: "Dhampus Village" },
+      { file: "08-unknown-village.jpg", caption: "Unknown village" },
+      { file: "07-sunrise-from-sarangkot.jpg", caption: "Sunrise from Sarangkot" },
     ]
   },
   {
