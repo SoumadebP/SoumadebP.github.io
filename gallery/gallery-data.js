@@ -36,13 +36,14 @@ window.GALLERY_DATA = [
     folder: "Nepal-Ghandruk",
     photos: [
       { file: "01-blue-moon.jpg", caption: "Blue moon saw me standing alone" },
-      { file: "02-laughing-with-annapurna-iv.jpg", caption: "Laughing with Annapurna IV" },
       { file: "03-leaving-on-a-jet-plane.jpg", caption: "Leaving on a jet plane" },
       { file: "04-mt-fishtail.jpg", caption: "Mt Fishtail" },
       { file: "05-mt-dhaulagiri.jpg", caption: "Mt. Dhaulagiri" },
+      { file: "02-laughing-with-annapurna-iv.jpg", caption: "Laughing with Annapurna IV" },
       { file: "06-sarangkot.jpg", caption: "Sarangkot" },
       { file: "07-sunrise-from-sarangkot.jpg", caption: "Sunrise from Sarangkot" },
       { file: "08-unknown-village.jpg", caption: "Unknown village" },
+      { file: "1.jpg", caption: "Dhampus Village" },
     ]
   },
   {
