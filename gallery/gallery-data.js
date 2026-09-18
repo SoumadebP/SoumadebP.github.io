@@ -49,8 +49,8 @@ window.GALLERY_DATA = [
     folder: "Uttarakhand",
     photos: [
       { file: "Cannyon.jpg", caption: "Somewhere in Garhwal!" },
-      { file: "Harshil", caption: "On the way to Harshil" },
-      { file: "Mt. Sudarshan, Gangotri", caption: "Mt. Sudarshan, Gangotri" },
+      { file: "Harshil.jpg", caption: "On the way to Harshil" },
+      { file: "Mt. Sudarshan, Gangotri.jpg", caption: "Mt. Sudarshan, Gangotri" },
       { file: "Mt. Nandadevi.jpg", caption: "Mt. Nandadevi from Auli" },
       { file: "Maa.jpg", caption: "Maa traded comfort for the mountains! Towards Gorson Bugyal" },
       { file: "Garhwal.jpg", caption: "Raw Garhwal beauty from Auli!" },
@@ -59,8 +59,8 @@ window.GALLERY_DATA = [
       { file: "Kempty Falls.jpg", caption: "Kempty Falls, Mussoorie" },
       { file: "Chakouri.jpg", caption: "Morning from Chakouri" },
       { file: "Deoria Tal.jpg", caption: "Deoria Tal, Sari Village" },
-      { file: "Chandrashilla.jpg", caption: "On the way to Chandrashilla, Chopta" },
-      { file: "Megh peon.jpg", caption: "Monsoon at Pangot!" },
+      { file: "Chandrashila.jpg", caption: "On the way to Chandrashilla, Chopta" },
+      { file: "Megh peon, Pangot.jpg", caption: "Monsoon at Pangot!" },
       { file: "Grey Bushchat, Pangot.jpg", caption: "Grey Bushchat, Pangot" },
       { file: "Khalia Top.jpg", caption: "Standing on Khalia Top! Munsiyari" },
     ]
